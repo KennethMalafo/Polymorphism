@@ -1,0 +1,27 @@
+package InheritancePackage;
+
+public class SeniorPerson extends AdultPerson{
+
+    String IsSenior = "Yes" , Discount = "Yes";
+
+    boolean a = Boolean.parseBoolean(IsSenior);
+    boolean b = Boolean.parseBoolean(Discount);
+
+    SeniorPerson ()
+    {}
+    SeniorPerson(String fName, String address, String gender, String cNumber, int age)
+    {
+        super(fName,address,gender, cNumber, age);
+    }
+    void Attributes()
+    {
+        super.Attributes();
+        System.out.println("Senior? "+ IsSenior);
+        System.out.println("Can Use Senior Citizen Discount? "+ Discount);
+
+    }
+    void CanDo() {
+        System.out.println("Can use a 20% discount");
+    }
+
+}
