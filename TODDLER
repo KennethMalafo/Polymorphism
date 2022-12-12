@@ -1,0 +1,38 @@
+package InheritancePackage;
+
+public class Toddler extends AdultPerson{
+    int studentID, GradeLevel;
+    String IsOnTheSchool = "No", MakingAssign ="Yes", IsAtHome ="Yes";
+    boolean e = Boolean.parseBoolean(IsOnTheSchool);
+    boolean f = Boolean.parseBoolean(MakingAssign);
+    boolean g = Boolean.parseBoolean(IsAtHome);
+
+
+    Toddler()
+    {}
+
+    Toddler(String fName, String address, String gender, String cNumber, int age, int studentID, int GradeLevel)
+    {
+        super(fName,gender,address, cNumber, age);
+        this.studentID = studentID;
+        this.GradeLevel = GradeLevel;
+
+    }
+
+
+
+    void Attributes()
+    {
+        super.Attributes();
+        System.out.println("Student ID: "+studentID );
+        System.out.println("Grade Level: "+GradeLevel );
+        System.out.println("On The School? "+ IsOnTheSchool);
+        System.out.println("Making Assignment? "+ MakingAssign);
+        System.out.println("At Home? "+ IsAtHome);
+
+    }
+    void CanDo() {
+        System.out.println("Can play and kiss mom and dad");
+    }
+
+}
