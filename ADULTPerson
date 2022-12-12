@@ -1,0 +1,31 @@
+package InheritancePackage;
+
+public class AdultPerson {
+    String fName, address, gender, cNumber;
+    int age;
+
+    AdultPerson() {
+    }
+
+    AdultPerson(String fName, String address, String gender, String cNumber, int age) {
+        this.fName = fName;
+        this.gender = gender;
+        this.address = address;
+        this.cNumber = cNumber;
+        this.age = age;
+    }
+
+
+    void Attributes() {
+        System.out.println("FullName: " + fName);
+        System.out.println("Gender: " + gender);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+        System.out.println("Contact Number: " + cNumber);
+    }
+
+    void CanDo() {
+        System.out.println("Can find a relationship or look for a job");
+    }
+
+}
