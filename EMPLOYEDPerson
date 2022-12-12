@@ -1,0 +1,42 @@
+package InheritancePackage;
+
+public class EmployedPerson extends AdultPerson {
+    String empID, dept, post;
+    int rate, salary;
+
+    String Working = "Yes", Resting = "No";
+    boolean c = Boolean.parseBoolean(Working);
+    boolean d = Boolean.parseBoolean(Resting);
+
+    EmployedPerson()
+    {}
+
+    EmployedPerson(String fName, String address, String gender, String cNumber, int age, String empID,String dept, String post, int rate, int salary)
+    {
+        super(fName,address,gender, cNumber, age);
+        this.empID = empID;
+        this.dept = dept;
+        this.post = post;
+        this.rate = rate;
+        this.salary = salary;
+
+    }
+
+
+
+    void Attributes()
+    {
+        super.Attributes();
+        System.out.println("Employee ID: " +empID );
+        System.out.println("Department: " +dept );
+        System.out.println("Position: " +post );
+        System.out.println("Rate: " +rate );
+        System.out.println("Salary: " +salary );
+        System.out.println("Working? " +Working);
+        System.out.println("Resting? " +Resting);
+    }
+    void CanDo(){
+        System.out.println("Can buy his own grocery");
+    }
+
+}
